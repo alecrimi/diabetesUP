@@ -1,5 +1,5 @@
 # diabetesUP
-This repository comprises the source XML used to create the CommacareHQ app Used for the proejct DiabetesUP.
+This repository comprises the source XML files used to create the CommacareHQ app Used for the proejct DiabetesUP.
 To run the app, the Dimage CommcareHQ basic tool is necessary https://play.google.com/store/apps/details?id=org.commcare.dalvik&hl=en
 
 This app is referred to the study "Boosting diabetes and pre-diabetes screening in rural Ghana" 
