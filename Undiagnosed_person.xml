@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:orx="http://openrosa.org/jr/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:vellum="http://commcarehq.org/xforms/vellum">
+	<h:head>
+		<h:title>Undiagnosed Person</h:title>
+		<model>
+			<instance>
+				<data xmlns:jrm="http://dev.commcarehq.org/jr/xforms" xmlns="http://openrosa.org/formdesigner/00933D60-42C5-43D7-BA2D-A8AF314A9862" uiVersion="1" version="1" name="Undiagnosed Person">
+					<Name />
+					<Age />
+					<Sex />
+					<Pregnant />
+					<Weight />
+					<Height />
+					<Date />
+					<glucotest />
+					<glucotest2 />
+					<fasting_or_random />
+					<risk />
+					<Hypertension />
+					<other_disease_do_you_want_to_mention />
+					<family />
+					<how_much_red_meat_do_you_consume_per_week />
+					<how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil />
+					<how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_ />
+					<alcohol />
+					<Rice />
+					<sleep />
+					<sport />
+				</data>
+			</instance>
+			<bind vellum:nodeset="#form/Name" nodeset="/data/Name" type="xsd:string" required="false()" />
+			<bind vellum:nodeset="#form/Age" nodeset="/data/Age" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/Sex" nodeset="/data/Sex" required="true()" />
+			<bind vellum:nodeset="#form/Pregnant" nodeset="/data/Pregnant" required="true()" />
+			<bind vellum:nodeset="#form/Weight" nodeset="/data/Weight" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/Height" nodeset="/data/Height" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/Date" nodeset="/data/Date" type="xsd:date" />
+			<bind vellum:nodeset="#form/glucotest" nodeset="/data/glucotest" type="xsd:double" required="true()" />
+			<bind vellum:nodeset="#form/glucotest2" nodeset="/data/glucotest2" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/fasting_or_random" nodeset="/data/fasting_or_random" required="true()" />
+			<bind vellum:nodeset="#form/risk" nodeset="/data/risk" required="true()" />
+			<bind vellum:nodeset="#form/Hypertension" nodeset="/data/Hypertension" required="true()" />
+			<bind vellum:nodeset="#form/other_disease_do_you_want_to_mention" nodeset="/data/other_disease_do_you_want_to_mention" type="xsd:string" />
+			<bind vellum:nodeset="#form/family" nodeset="/data/family" type="xsd:string" required="true()" />
+			<bind vellum:nodeset="#form/how_much_red_meat_do_you_consume_per_week" nodeset="/data/how_much_red_meat_do_you_consume_per_week" type="xsd:string" />
+			<bind vellum:nodeset="#form/how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil" nodeset="/data/how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil" type="xsd:int" />
+			<bind vellum:nodeset="#form/how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_" nodeset="/data/how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_" type="xsd:int" />
+			<bind vellum:nodeset="#form/alcohol" nodeset="/data/alcohol" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/Rice" nodeset="/data/Rice" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/sleep" nodeset="/data/sleep" required="true()" />
+			<bind vellum:nodeset="#form/sport" nodeset="/data/sport" type="xsd:string" required="true()" />
+			<itext>
+				<translation lang="en" default="">
+					<text id="Name-label">
+						<value>First Name or Initials?</value>
+					</text>
+					<text id="Age-label">
+						<value>Age?</value>
+					</text>
+					<text id="Sex-label">
+						<value>Sex?</value>
+					</text>
+					<text id="Sex-Male-label">
+						<value>Male</value>
+					</text>
+					<text id="Sex-Female-label">
+						<value>Female</value>
+					</text>
+					<text id="Pregnant-label">
+						<value>If Female, is she pregnant? Select "No" for Male</value>
+					</text>
+					<text id="Pregnant-Pregnant-label">
+						<value>Pregnant</value>
+					</text>
+					<text id="Pregnant-No-label">
+						<value>No</value>
+					</text>
+					<text id="Weight-label">
+						<value>Weight in Kg?</value>
+					</text>
+					<text id="Height-label">
+						<value>Height in cm?</value>
+					</text>
+					<text id="Date-label">
+						<value>Date of glocotest?</value>
+					</text>
+					<text id="glucotest-label">
+						<value>Type the result of the glucotest if in mmol/l ? Type 0 if you used another measure</value>
+					</text>
+					<text id="glucotest2-label">
+						<value>Type the result of the glucotest if in mg/dL? Type 0 if you used another measure</value>
+					</text>
+					<text id="fasting_or_random-label">
+						<value>Fasting or Random?</value>
+					</text>
+					<text id="fasting_or_random-fasting-label">
+						<value>Fasting</value>
+					</text>
+					<text id="fasting_or_random-random-label">
+						<value>Random</value>
+					</text>
+					<text id="risk-label">
+						<value>Do you rank the subject with diabetes or with abnormal high glucose level?</value>
+					</text>
+					<text id="risk-Yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="risk-No-label">
+						<value>No</value>
+					</text>
+					<text id="Hypertension-label">
+						<value>Ever diagnosed with hyper-tension?</value>
+					</text>
+					<text id="Hypertension-Yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="Hypertension-No-label">
+						<value>No</value>
+					</text>
+					<text id="other_disease_do_you_want_to_mention-label">
+						<value>Other disease do you want to mention?</value>
+					</text>
+					<text id="family-label">
+						<value>Anyone in your family has diabetes? Father? Mother? Siblings? Who? (if none, write "none")</value>
+					</text>
+					<text id="how_much_red_meat_do_you_consume_per_week-label">
+						<value>How much red meat do you consume per week?</value>
+					</text>
+					<text id="how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil-label">
+						<value>How many times per week you eat dishes with other staple food (maize(corn), millet, sorghum)?
+</value>
+					</text>
+					<text id="how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_-label">
+						<value>How many times per week you eat dishes with Root and Tuber(potatoes, cassava, yam)?</value>
+					</text>
+					<text id="alcohol-label">
+						<value>How often in a week do you drink alcohol? E.g. one beer.</value>
+					</text>
+					<text id="Rice-label">
+						<value>How many times per week you eat dishes with rice (don't count brown rice)?</value>
+					</text>
+					<text id="sleep-label">
+						<value>Do you go to sleep in the evening soon after dinner?</value>
+					</text>
+					<text id="sleep-Yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="sleep-No-label">
+						<value>No</value>
+					</text>
+					<text id="sport-label">
+						<value>How often do you do physical exercise (work or sport)?</value>
+					</text>
+				</translation>
+			</itext>
+		</model>
+	</h:head>
+	<h:body>
+		<input vellum:ref="#form/Name" ref="/data/Name">
+			<label ref="jr:itext('Name-label')" />
+		</input>
+		<input vellum:ref="#form/Age" ref="/data/Age">
+			<label ref="jr:itext('Age-label')" />
+		</input>
+		<select1 vellum:ref="#form/Sex" ref="/data/Sex">
+			<label ref="jr:itext('Sex-label')" />
+			<item>
+				<label ref="jr:itext('Sex-Male-label')" />
+				<value>Male</value>
+			</item>
+			<item>
+				<label ref="jr:itext('Sex-Female-label')" />
+				<value>Female</value>
+			</item>
+		</select1>
+		<select1 vellum:ref="#form/Pregnant" ref="/data/Pregnant">
+			<label ref="jr:itext('Pregnant-label')" />
+			<item>
+				<label ref="jr:itext('Pregnant-Pregnant-label')" />
+				<value>Pregnant</value>
+			</item>
+			<item>
+				<label ref="jr:itext('Pregnant-No-label')" />
+				<value>No</value>
+			</item>
+		</select1>
+		<input vellum:ref="#form/Weight" ref="/data/Weight">
+			<label ref="jr:itext('Weight-label')" />
+		</input>
+		<input vellum:ref="#form/Height" ref="/data/Height">
+			<label ref="jr:itext('Height-label')" />
+		</input>
+		<input vellum:ref="#form/Date" ref="/data/Date">
+			<label ref="jr:itext('Date-label')" />
+		</input>
+		<input vellum:ref="#form/glucotest" ref="/data/glucotest">
+			<label ref="jr:itext('glucotest-label')" />
+		</input>
+		<input vellum:ref="#form/glucotest2" ref="/data/glucotest2">
+			<label ref="jr:itext('glucotest2-label')" />
+		</input>
+		<select1 vellum:ref="#form/fasting_or_random" ref="/data/fasting_or_random">
+			<label ref="jr:itext('fasting_or_random-label')" />
+			<item>
+				<label ref="jr:itext('fasting_or_random-fasting-label')" />
+				<value>fasting</value>
+			</item>
+			<item>
+				<label ref="jr:itext('fasting_or_random-random-label')" />
+				<value>random</value>
+			</item>
+		</select1>
+		<select1 vellum:ref="#form/risk" ref="/data/risk">
+			<label ref="jr:itext('risk-label')" />
+			<item>
+				<label ref="jr:itext('risk-Yes-label')" />
+				<value>Yes</value>
+			</item>
+			<item>
+				<label ref="jr:itext('risk-No-label')" />
+				<value>No</value>
+			</item>
+		</select1>
+		<select1 vellum:ref="#form/Hypertension" ref="/data/Hypertension">
+			<label ref="jr:itext('Hypertension-label')" />
+			<item>
+				<label ref="jr:itext('Hypertension-Yes-label')" />
+				<value>Yes</value>
+			</item>
+			<item>
+				<label ref="jr:itext('Hypertension-No-label')" />
+				<value>No</value>
+			</item>
+		</select1>
+		<input vellum:ref="#form/other_disease_do_you_want_to_mention" ref="/data/other_disease_do_you_want_to_mention">
+			<label ref="jr:itext('other_disease_do_you_want_to_mention-label')" />
+		</input>
+		<input vellum:ref="#form/family" ref="/data/family">
+			<label ref="jr:itext('family-label')" />
+		</input>
+		<input vellum:ref="#form/how_much_red_meat_do_you_consume_per_week" ref="/data/how_much_red_meat_do_you_consume_per_week">
+			<label ref="jr:itext('how_much_red_meat_do_you_consume_per_week-label')" />
+		</input>
+		<input vellum:ref="#form/how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil" ref="/data/how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil">
+			<label ref="jr:itext('how_many_times_per_week_you_eat_dishes_with_other_staple_food_maizecorn_mil-label')" />
+		</input>
+		<input vellum:ref="#form/how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_" ref="/data/how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_">
+			<label ref="jr:itext('how_many_times_per_week_you_eat_dishes_with_root_and_tuberpotatoes_cassava_-label')" />
+		</input>
+		<input vellum:ref="#form/alcohol" ref="/data/alcohol">
+			<label ref="jr:itext('alcohol-label')" />
+		</input>
+		<input vellum:ref="#form/Rice" ref="/data/Rice">
+			<label ref="jr:itext('Rice-label')" />
+		</input>
+		<select1 vellum:ref="#form/sleep" ref="/data/sleep">
+			<label ref="jr:itext('sleep-label')" />
+			<item>
+				<label ref="jr:itext('sleep-Yes-label')" />
+				<value>Yes</value>
+			</item>
+			<item>
+				<label ref="jr:itext('sleep-No-label')" />
+				<value>No</value>
+			</item>
+		</select1>
+		<input vellum:ref="#form/sport" ref="/data/sport">
+			<label ref="jr:itext('sport-label')" />
+		</input>
+	</h:body>
+</h:html>
